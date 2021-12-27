@@ -87,14 +87,18 @@ Now, you are inside your docker container structure.
 
 ### Docker resources for Python
 
+
 1.  Folder *tutorial_youtube*
 It has basic docker app.
 Used code for sample from these 
-[github](https://github.com/python-engineer/python-fun, ), [youtube](https://www.youtube.com/watch?v=bi0cKgmRuiA)
+[github](https://github.com/python-engineer/python-fun, ),  and https://www.youtube.com/watch?v=bi0cKgmRuiA
 
 
+2.  Folder *tutorial_advance_youtube* from https://www.youtube.com/watch?v=bi0cKgmRuiA
 
-2.  Folder *tutorial_advance_youtube* from [youtube](https://www.youtube.com/watch?v=bi0cKgmRuiA)
+
+3. Folder **freeCodeCamp_tutorials**
+from [freeCodeCampe youtube](https://www.youtube.com/watch?v=-ANCcFQBk6I)
 
 
 ## Tutorial to use Docker advance from youtuber: 
