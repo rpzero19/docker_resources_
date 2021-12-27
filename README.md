@@ -8,25 +8,32 @@ Docker enables you to separate your applications from your infrastructure so you
 -   Dockerimage
 -   Dockercontainer
 
+
 ### Dockerfile
     In root folder, create a file 'Dockerfile'
 
-### create a Docker Image
+### create a Docker Image   
+
 Inside the docker file, create instruction to create DockerImage
 
-    Basic dockerfile instruction
+-   Basic dockerfile instruction
 
-    `From python:3
+``` 
+    From python:3
 
     ADD main.py .
 
     RUN pip install requests beautifulsoup4
 
-    CMD [ "python", "./main.py" ]`
+    CMD [ "python", "./main.py" ] 
+    
+```
+
 
 Advance Dockerfile instruction
 
-    `FROM python:3.8
+```
+    FROM python:3.8
 
     WORKDIR /fastapi-app
 
@@ -36,13 +43,14 @@ Advance Dockerfile instruction
 
     COPY ./app ./app
 
-    CMD ["python", "./app/main.py"]`
+    CMD ["python", "./app/main.py"]
+
+```
 
 
--   FROM python:3.8(pulls the image from docker hub)
+-    FROM python:3.8(pulls the image from docker hub)
 
--   WORKDIR /fastapi-app or
-        WORKDIR /usr/src/app
+-  WORKDIR /fastapi-app or WORKDIR /usr/src/app
 
 -    COPY requirement.txt .
 
@@ -55,6 +63,7 @@ Advance Dockerfile instruction
 -   CMD ["python", "./app/main.py"]
 
 ### Build the container
+
 -   `docker build -t dockername`(-t: tags the image)
     
     Run the container
@@ -80,20 +89,17 @@ Now, you are inside your docker container structure.
 
 1.  Folder *tutorial_youtube*
 It has basic docker app.
-Used code for sample from
-
-https://github.com/python-engineer/python-fun
-REF:https://www.youtube.com/watch?v=bi0cKgmRuiA
+Used code for sample from these 
+[github](https://github.com/python-engineer/python-fun, ), [youtube](https://www.youtube.com/watch?v=bi0cKgmRuiA)
 
 
-2.  Folder *tutorial_advance_youtube*
 
-REF:https://www.youtube.com/watch?v=bi0cKgmRuiA
+2.  Folder *tutorial_advance_youtube* from [youtube](https://www.youtube.com/watch?v=bi0cKgmRuiA)
 
 
-    ## Tutorial to use Docker advance from youtuber: Python Engineer
+## Tutorial to use Docker advance from youtuber: 
+[Python Engineer](https://www.youtube.com/watch?v=bi0cKgmRuiA)
 
-    REF: https://www.youtube.com/watch?v=bi0cKgmRuiA
 
     Using FASTAPI.
 
